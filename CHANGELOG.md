@@ -1,17 +1,3 @@
-## [2.34.2](https://github.com/EveryInc/compound-engineering-plugin/compare/v2.34.1...v2.34.2) (2026-03-03)
-
-
-### Bug Fixes
-
-* **release:** add package repository metadata ([eab77bc](https://github.com/EveryInc/compound-engineering-plugin/commit/eab77bc5b5361dc73e2ec8aa4678c8bb6114f6e7))
-
-## [2.34.1](https://github.com/EveryInc/compound-engineering-plugin/compare/v2.34.0...v2.34.1) (2026-03-03)
-
-
-### Bug Fixes
-
-* **release:** align cli versioning with repo tags ([7c58eee](https://github.com/EveryInc/compound-engineering-plugin/commit/7c58eeeec6cf33675cbe2b9639c7d69b92ecef60))
-
 # Changelog
 
 All notable changes to the `@every-env/compound-plugin` CLI tool will be documented in this file.
@@ -20,6 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 Release numbering now follows the repository `v*` tag line. Starting at `v2.34.0`, the root CLI package and this changelog stay on that shared version stream. Older entries below retain the previous `0.x` CLI numbering.
+
+## [2.34.2](https://github.com/EveryInc/compound-engineering-plugin/compare/v2.34.1...v2.34.2) (2026-03-03)
+
+### Bug Fixes
+
+* **release:** add package repository metadata ([eab77bc](https://github.com/EveryInc/compound-engineering-plugin/commit/eab77bc5b5361dc73e2ec8aa4678c8bb6114f6e7))
+
+## [2.34.1](https://github.com/EveryInc/compound-engineering-plugin/compare/v2.34.0...v2.34.1) (2026-03-03)
+
+### Bug Fixes
+
+* **release:** align cli versioning with repo tags ([7c58eee](https://github.com/EveryInc/compound-engineering-plugin/commit/7c58eeeec6cf33675cbe2b9639c7d69b92ecef60))
 
 ## [2.34.0] - 2026-03-03
 

@@ -49,6 +49,7 @@ Rules:
 
 - Do not start a separate root CLI version stream. The root CLI follows the repo tag line.
 - Do not hand-bump the root CLI `package.json` or root `CHANGELOG.md` for routine feature work. Use conventional commits and let semantic-release write the released root version back to git.
+- Keep the root `CHANGELOG.md` header block aligned with `.releaserc.json` `changelogTitle`. If they drift, semantic-release will prepend release notes above the header.
 - Continue updating embedded plugin metadata when the plugin contents themselves change.
 
 ### Adding a New Plugin
