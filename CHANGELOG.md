@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Release numbering now follows the repository `v*` tag line. Starting at `v2.34.0`, the root CLI package and this changelog stay on that shared version stream. Older entries below retain the previous `0.x` CLI numbering.
 
+## [2.34.6](https://github.com/EveryInc/compound-engineering-plugin/compare/v2.34.5...v2.34.6) (2026-03-10)
+
+
+### Bug Fixes
+
+* **mcp:** add API key auth support for Context7 server ([c649cfc](https://github.com/EveryInc/compound-engineering-plugin/commit/c649cfc17f895b58babf737dfdec2f6cc391e40a)), closes [#153](https://github.com/EveryInc/compound-engineering-plugin/issues/153)
+
 ## [2.34.5](https://github.com/EveryInc/compound-engineering-plugin/compare/v2.34.4...v2.34.5) (2026-03-10)
 
 
