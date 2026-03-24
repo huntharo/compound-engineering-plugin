@@ -472,7 +472,17 @@ When external delegation is active, follow this workflow for each tagged task. D
 
 3. **Write prompt to file** — Save the assembled prompt to a unique temporary file to avoid shell quoting issues and cross-task races. Use a unique filename per task.
 
-4. **Delegate** — Run the delegate CLI, piping the prompt file via stdin (not argv expansion, which hits `ARG_MAX` on large prompts). Omit the model flag to use the delegate's default model, which stays current without manual updates.
+4. **Delegate** — Run the delegate CLI, piping the prompt file via stdin. Omit the model flag to use the delegate's default model, which stays current without manual updates.
+
+   **Use `cat ... | codex`, not shell redirects.** Codex CLI rejects `< file` with "stdin is not a terminal". Always pipe:
+
+   ```bash
+   cat /tmp/codex-task-XXXXX.txt | codex exec --approval-mode full-auto --quiet 2>&1
+   ```
+
+   Do not use: `codex exec ... < /tmp/codex-task-XXXXX.txt` (fails immediately).
+
+   Piping also avoids `ARG_MAX` limits that would occur if passing the prompt as a CLI argument.
 
 5. **Review diff** — After the delegate finishes, verify the diff is non-empty and in-scope. Run the project's test/lint commands. If the diff is empty or out-of-scope, fall back to standard mode for that task.
 
