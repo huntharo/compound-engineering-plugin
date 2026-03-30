@@ -354,6 +354,8 @@ What's next?
 5. Other
 ```
 
+**After displaying the success output, present the "What's next?" options using the platform's blocking question tool** (`AskUserQuestion` in Claude Code, `request_user_input` in Codex, `ask_user` in Gemini). If no question tool is available, present the numbered options and wait for the user's reply before proceeding. Do not continue the workflow or end the turn without the user's selection.
+
 **Alternate output (when updating an existing doc due to high overlap):**
 
 ```
